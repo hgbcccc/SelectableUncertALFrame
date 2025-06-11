@@ -1,0 +1,9 @@
+# 损坏的图片列表
+# 格式: 路径 | 基本文件名 | 错误信息
+# -----
+
+train2024/Tretzendorf_323_6769.tif | Tretzendorf_323_6769 | image file is truncated (255 bytes not processed)
+train2024/Tretzendorf_323_6767.tif | Tretzendorf_323_6767 | image file is truncated (255 bytes not processed)
+train2024/Tretzendorf_323_6766.tif | Tretzendorf_323_6766 | image file is truncated (255 bytes not processed)
+train2024/Tretzendorf_323_6768.tif | Tretzendorf_323_6768 | image file is truncated (255 bytes not processed)
+train2024/Tretzendorf_323_6764.tif | Tretzendorf_323_6764 | image file is truncated (255 bytes not processed)
