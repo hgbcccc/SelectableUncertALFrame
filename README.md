@@ -1,4 +1,4 @@
-# 🎯SelectableUncertALFrame：集成多种采样策略的目标检测主动学习框架
+## 🎯SelectableUncertALFrame：集成多种采样策略的目标检测主动学习框架
 
 
 ## 🌟简介
