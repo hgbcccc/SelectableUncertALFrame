@@ -45,15 +45,16 @@ pip install -e .
 ## 🚀 快速开始
 
 ```
-# 准备主动学习数据集 10%用于初始训练students模型，90%作为未标注数据
+## 准备主动学习数据集 10%用于初始训练students模型，90%作为未标注数据
+## 配置文件参考custom_config
 
 !python tools/prepare_active_dataset.py \
     /path/to/data_root \  # 该数据集类型必须为MS COCO形式
     /path/to/save_dir \
-    --train-ratio 0.08 \
-    --val-ratio 0.02 \
+    --train-ratio 0.04 \
+    --val-ratio 0.01 \
     --seed 42
-# 得到如下数据集目录
+## 得到如下数据集目录
 
 # save_dir/
 # ├── images_labeled_train/
@@ -64,25 +65,9 @@ pip install -e .
 #     ├── instances_labeled_val.json
 #     └── instances_unlabeled.json
 
-# 使用脚本，配置文件组装.ipynb中完成配置文件的基础设置，后添加如下主动学习的配置，并将
-# train_dataloader,val_dataloader数据集类型修改为ActiveCocoDataset
 
-active_learning = dict(
-    data_root='/path/to/save_dir',
-    inference_options=dict(
-        max_det=100,
-        nms_thr=0.3,
-        save_results=True,
-        score_thr=0.3,
-        uncertainty_methods=[
-            'entropy',
-            'normalized_entropy',
-        ]),
-    max_iterations=5,
-    sample_selection=dict(
-        num_samples=100, strategy='uncertainty', uncertainty_method='entropy'))
 
-# 开始主动学习训练
+## 开始主动学习训练
 
 !python tools/al_train.py /path/to/config.py --work-dir  /path/to/savedir 
 ```
@@ -107,7 +92,3 @@ active_learning = dict(
 
 本项目采用 **Apache 2.0 许可证**
 
-## 📮 联系我们
-
-* 💬 Issues: **GitHub Issues**
-* 🌟 Star: 如果这个项目对您有帮助，欢迎 star 支持！
