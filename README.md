@@ -69,7 +69,7 @@ pip install -e .
 
 ## 开始主动学习训练
 
-!python tools/al_train.py /path/to/config.py --work-dir  /path/to/savedir 
+!python sual/train.py /path/to/config.py --work-dir  /path/to/savedir 
 ```
 
 ## 📚 文档
