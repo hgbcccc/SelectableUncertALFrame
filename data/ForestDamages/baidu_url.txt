@@ -1,0 +1,26 @@
+链接: https://pan.baidu.com/s/1NdlAxYVJRky-vP9hWJUGsA?pwd=7880 提取码: 7880 
+
+
+
+文件结构为：
+|——coco_spruce_beetle
+    |——train2024
+    |——val2024
+    |——annotations
+        |——instances_train2024.json
+        |——instances_val2024.json
+
+将： |——train2024
+    |——val2024=
+    |——annotations
+        |——instances_train2024.json
+        |——instances_val2024.json
+
+放于：ForestDamages,得到
+    |——data
+	|——ForestDamages
+	    |——train2024
+	    |——val2024
+	    |——annotations
+		|——instances_train2024.json
+		|——instances_val2024.json
